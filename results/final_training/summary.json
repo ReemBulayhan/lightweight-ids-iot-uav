@@ -1,0 +1,57 @@
+{
+  "in_dataset": [
+    {
+      "configuration": "config1_merged",
+      "macro_f1": 0.5975487427381665,
+      "accuracy": 0.774585840814267,
+      "weighted_f1": 0.7947666310529212,
+      "epochs": 8,
+      "best_epoch": 3,
+      "params": 44110,
+      "model_kb": 605.9,
+      "train_minutes": 21.17
+    },
+    {
+      "configuration": "config2_cicids2017",
+      "macro_f1": 0.812103199952378,
+      "accuracy": 0.9780154772003072,
+      "weighted_f1": 0.9867992186022073,
+      "epochs": 19,
+      "best_epoch": 14,
+      "params": 50382,
+      "model_kb": 679.4,
+      "train_minutes": 9.61
+    },
+    {
+      "configuration": "config3_ciciot2023",
+      "macro_f1": 0.6261867182350458,
+      "accuracy": 0.7937264997054647,
+      "weighted_f1": 0.8098319427934298,
+      "epochs": 12,
+      "best_epoch": 7,
+      "params": 47182,
+      "model_kb": 641.9,
+      "train_minutes": 45.24
+    }
+  ],
+  "cross_dataset": [
+    {
+      "train": "CICIDS2017",
+      "test": "CIC-IoT2023",
+      "classes": "BENIGN, Botnet, BruteForce, DDoS, DoS, PortScan, WebAttack",
+      "in_domain_macro_f1": 0.6294962824244213,
+      "cross_macro_f1": 0.02178884020196684,
+      "drop_percent": 96.54,
+      "cross_accuracy": 0.08250891856515899
+    },
+    {
+      "train": "CIC-IoT2023",
+      "test": "CICIDS2017",
+      "classes": "BENIGN, Botnet, BruteForce, DDoS, DoS, PortScan, WebAttack",
+      "in_domain_macro_f1": 0.5859431538945367,
+      "cross_macro_f1": 0.038753567936156016,
+      "drop_percent": 93.39,
+      "cross_accuracy": 0.07201855166711672
+    }
+  ]
+}
