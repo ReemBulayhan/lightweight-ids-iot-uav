@@ -1,0 +1,94 @@
+{
+  "table": [
+    {
+      "configuration": "config1_merged",
+      "model": "teacher (Model E)",
+      "macro_f1": 0.5975487427381665,
+      "accuracy": 0.774585840814267,
+      "weighted_f1": 0.7947666310529212,
+      "params": 44110,
+      "model_kb": 605.9,
+      "ms_per_1000": 1.193
+    },
+    {
+      "configuration": "config1_merged",
+      "model": "student with KD",
+      "macro_f1": 0.5830037350480965,
+      "accuracy": 0.7463727017280624,
+      "weighted_f1": 0.7705046458763763,
+      "params": 3358,
+      "model_kb": 127.3,
+      "ms_per_1000": 0.928
+    },
+    {
+      "configuration": "config1_merged",
+      "model": "student without KD",
+      "macro_f1": 0.5716818240318899,
+      "accuracy": 0.748311912226269,
+      "weighted_f1": 0.772244340026541,
+      "params": 3358,
+      "model_kb": 127.3,
+      "ms_per_1000": 0.611
+    },
+    {
+      "configuration": "config2_cicids2017",
+      "model": "teacher (Model E)",
+      "macro_f1": 0.812103199952378,
+      "accuracy": 0.9780154772003072,
+      "weighted_f1": 0.9867992186022073,
+      "params": 50382,
+      "model_kb": 679.4,
+      "ms_per_1000": 8.102
+    },
+    {
+      "configuration": "config2_cicids2017",
+      "model": "student with KD",
+      "macro_f1": 0.7181225368583035,
+      "accuracy": 0.9651632646103928,
+      "weighted_f1": 0.976830255552448,
+      "params": 4926,
+      "model_kb": 145.7,
+      "ms_per_1000": 5.188
+    },
+    {
+      "configuration": "config2_cicids2017",
+      "model": "student without KD",
+      "macro_f1": 0.7536290859687257,
+      "accuracy": 0.9706819553651821,
+      "weighted_f1": 0.9808680944892446,
+      "params": 4926,
+      "model_kb": 145.7,
+      "ms_per_1000": 2.647
+    },
+    {
+      "configuration": "config3_ciciot2023",
+      "model": "teacher (Model E)",
+      "macro_f1": 0.6261867182350458,
+      "accuracy": 0.7937264997054647,
+      "weighted_f1": 0.8098319427934298,
+      "params": 47182,
+      "model_kb": 641.9,
+      "ms_per_1000": 1.62
+    },
+    {
+      "configuration": "config3_ciciot2023",
+      "model": "student with KD",
+      "macro_f1": 0.5973685370284236,
+      "accuracy": 0.7524078390295545,
+      "weighted_f1": 0.7736537625282855,
+      "params": 4126,
+      "model_kb": 136.3,
+      "ms_per_1000": 1.014
+    },
+    {
+      "configuration": "config3_ciciot2023",
+      "model": "student without KD",
+      "macro_f1": 0.5960699696628691,
+      "accuracy": 0.7739826790769662,
+      "weighted_f1": 0.7926718068994945,
+      "params": 4126,
+      "model_kb": 136.3,
+      "ms_per_1000": 0.677
+    }
+  ]
+}

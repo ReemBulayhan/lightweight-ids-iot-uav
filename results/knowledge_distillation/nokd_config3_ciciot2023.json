@@ -1,0 +1,246 @@
+{
+  "run": "nokd_config3_ciciot2023",
+  "mode": "nokd",
+  "config": "config3_ciciot2023",
+  "T": null,
+  "alpha": 0.0,
+  "epochs": 11,
+  "best_epoch": 6,
+  "train_minutes": 40.14,
+  "params": 4126,
+  "teacher_params": 47182,
+  "reduction_percent": 91.26,
+  "model_file_kb": 136.3,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.01105,
+      "val_loss": 0.47152,
+      "val_acc": 0.72914,
+      "val_macro_f1": 0.57397
+    },
+    {
+      "epoch": 2,
+      "loss": 0.8503,
+      "val_loss": 0.46008,
+      "val_acc": 0.73724,
+      "val_macro_f1": 0.5783
+    },
+    {
+      "epoch": 3,
+      "loss": 0.80922,
+      "val_loss": 0.44803,
+      "val_acc": 0.74217,
+      "val_macro_f1": 0.58464
+    },
+    {
+      "epoch": 4,
+      "loss": 0.79103,
+      "val_loss": 0.43904,
+      "val_acc": 0.74928,
+      "val_macro_f1": 0.60043
+    },
+    {
+      "epoch": 5,
+      "loss": 0.77934,
+      "val_loss": 0.44169,
+      "val_acc": 0.74451,
+      "val_macro_f1": 0.59586
+    },
+    {
+      "epoch": 6,
+      "loss": 0.7709,
+      "val_loss": 0.41755,
+      "val_acc": 0.77452,
+      "val_macro_f1": 0.59681
+    },
+    {
+      "epoch": 7,
+      "loss": 0.76431,
+      "val_loss": 0.42799,
+      "val_acc": 0.76639,
+      "val_macro_f1": 0.59712
+    },
+    {
+      "epoch": 8,
+      "loss": 0.75903,
+      "val_loss": 0.44131,
+      "val_acc": 0.74008,
+      "val_macro_f1": 0.596
+    },
+    {
+      "epoch": 9,
+      "loss": 0.75567,
+      "val_loss": 0.44125,
+      "val_acc": 0.73189,
+      "val_macro_f1": 0.60136
+    },
+    {
+      "epoch": 10,
+      "loss": 0.75147,
+      "val_loss": 0.4212,
+      "val_acc": 0.76467,
+      "val_macro_f1": 0.60589
+    },
+    {
+      "epoch": 11,
+      "loss": 0.74935,
+      "val_loss": 0.43194,
+      "val_acc": 0.75521,
+      "val_macro_f1": 0.59674
+    }
+  ],
+  "tests": {
+    "own": {
+      "macro_f1": 0.5960699696628691,
+      "accuracy": 0.7739826790769662,
+      "weighted_f1": 0.7926718068994945,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.8366424039458247,
+          "recall": 0.7019683364952237,
+          "f1": 0.763411382882801,
+          "support": 209263
+        },
+        "Botnet": {
+          "precision": 0.9856030433274835,
+          "recall": 0.9959245132352441,
+          "f1": 0.9907368968128967,
+          "support": 470864
+        },
+        "BruteForce": {
+          "precision": 0.06132939739413681,
+          "recall": 0.4818072770891643,
+          "f1": 0.10880852408686623,
+          "support": 2501
+        },
+        "DDoS": {
+          "precision": 0.939915584941605,
+          "recall": 0.7288632112132268,
+          "f1": 0.8210433798516875,
+          "support": 2308274
+        },
+        "DoS": {
+          "precision": 0.489277738185949,
+          "recall": 0.8445302025325435,
+          "f1": 0.6195941930024159,
+          "support": 704825
+        },
+        "PortScan": {
+          "precision": 0.762565011544651,
+          "recall": 0.5004515260048367,
+          "f1": 0.6043100978643576,
+          "support": 130668
+        },
+        "Spoofing": {
+          "precision": 0.7625778079224601,
+          "recall": 0.8019511521691612,
+          "f1": 0.7817690401157379,
+          "support": 86923
+        },
+        "WebAttack": {
+          "precision": 0.042382787817515484,
+          "recall": 0.5686731665960153,
+          "f1": 0.07888624268618977,
+          "support": 4718
+        }
+      },
+      "confusion_matrix": [
+        [
+          146896,
+          0,
+          7949,
+          0,
+          0,
+          17686,
+          14780,
+          21952
+        ],
+        [
+          0,
+          468945,
+          0,
+          199,
+          1480,
+          1,
+          236,
+          3
+        ],
+        [
+          493,
+          0,
+          1205,
+          0,
+          0,
+          170,
+          103,
+          530
+        ],
+        [
+          4,
+          4892,
+          20,
+          1682416,
+          619855,
+          580,
+          216,
+          291
+        ],
+        [
+          2,
+          1958,
+          5,
+          107348,
+          595246,
+          137,
+          122,
+          7
+        ],
+        [
+          17822,
+          0,
+          9768,
+          0,
+          0,
+          65393,
+          5819,
+          31866
+        ],
+        [
+          9706,
+          0,
+          453,
+          2,
+          0,
+          1082,
+          69708,
+          5972
+        ],
+        [
+          655,
+          0,
+          248,
+          0,
+          0,
+          705,
+          427,
+          2683
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "Botnet",
+        "BruteForce",
+        "DDoS",
+        "DoS",
+        "PortScan",
+        "Spoofing",
+        "WebAttack"
+      ],
+      "test_rows": 3918036,
+      "predicted_outside_labels": 0,
+      "inference_seconds": 2.65,
+      "inference_ms_per_1000": 0.677
+    }
+  }
+}
