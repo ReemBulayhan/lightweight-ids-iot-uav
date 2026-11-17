@@ -1,0 +1,58 @@
+{
+  "model": "student_kd_config2_cicids2017",
+  "config": "config2_cicids2017",
+  "kind": "student_kd",
+  "params": 4926,
+  "keras_kb": 145.7,
+  "tflite_float32_kb": 33.6,
+  "tflite_int8_kb": 23.7,
+  "keras_float32": {
+    "macro_f1": 0.7180537603884949,
+    "accuracy": 0.9651612592721825,
+    "weighted_f1": 0.9768314964458955,
+    "per_class_f1": {
+      "BENIGN": 0.9789,
+      "Botnet": 0.0714,
+      "BruteForce": 0.8137,
+      "DDoS": 0.9956,
+      "DoS": 0.9603,
+      "PortScan": 0.9919,
+      "WebAttack": 0.2145
+    }
+  },
+  "tflite_float32": {
+    "macro_f1": 0.7180537603884949,
+    "accuracy": 0.9651612592721825,
+    "weighted_f1": 0.9768314964458955,
+    "per_class_f1": {
+      "BENIGN": 0.9789,
+      "Botnet": 0.0714,
+      "BruteForce": 0.8137,
+      "DDoS": 0.9956,
+      "DoS": 0.9603,
+      "PortScan": 0.9919,
+      "WebAttack": 0.2145
+    }
+  },
+  "tflite_int8": {
+    "macro_f1": 0.7089167054775697,
+    "accuracy": 0.9506887334083329,
+    "weighted_f1": 0.9634757697390134,
+    "per_class_f1": {
+      "BENIGN": 0.9698,
+      "Botnet": 0.0675,
+      "BruteForce": 0.9047,
+      "DDoS": 0.9741,
+      "DoS": 0.9188,
+      "PortScan": 0.9439,
+      "WebAttack": 0.1838
+    }
+  },
+  "int8_agreement_with_float32": 0.9769927547130461,
+  "latency_p90_ms_float32": 0.03887109992319893,
+  "latency_p90_ms_int8": 0.04287970023142407,
+  "latency_mean_ms_float32": 0.0354972714755597,
+  "latency_mean_ms_int8": 0.04359006249865516,
+  "representative_records": 500,
+  "test_records": 498669
+}
